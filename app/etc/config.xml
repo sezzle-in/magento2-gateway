@@ -10,17 +10,17 @@
     <default>
         <payment>
             <sezzlepay>
-		        <active>0</active>
+		        <active>1</active>
                 <model>Sezzle\Sezzlepay\Model\SezzlePay</model>
                 <order_status>processing</order_status>
-                <merchant_country>US</merchant_country>
+                <merchant_country>IN</merchant_country>
                 <payment_mode>live</payment_mode>
                 <log_tracker>0</log_tracker>
                 <payment_action>authorize_capture</payment_action>
                 <title>Sezzle</title>
                 <widget_pdp>1</widget_pdp>
-                <widget_cart>1</widget_cart>
-	    </sezzlepay>
+                <widget_cart>1</widget_cart>	    
+            </sezzlepay>
         </payment>
     </default>
 </config>
