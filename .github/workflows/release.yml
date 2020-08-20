@@ -22,11 +22,8 @@ jobs:
         draft: false
         prerelease: false
     - name: Create release archive
-      run: |
-        rm -rf sezzle-magento2 && mkdir -p sezzle-magento2/Sezzle/Sezzlepay
-        cp README.md sezzle-magento2
-        cp -R app/* sezzle-magento2/Sezzle/Sezzlepay/
-        zip -r sezzle-magento2.zip sezzle-magento2
+      id: create_release
+      run: ./internal/scripts/create-release.sh
     - name: Upload release asset
       id: upload_release
       uses: actions/upload-release-asset@v1
