@@ -1,0 +1,4 @@
+.DS_Store
+sezzle-magento2*
+*.env
+!docker.sample.env

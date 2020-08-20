@@ -1,0 +1,18 @@
+<?php
+/*
+ * @category    Sezzle
+ * @package     Sezzle_Sezzlepay
+ * @copyright   Copyright (c) Sezzle (https://www.sezzle.in/)
+ */
+?>
+<?php if ($this->isWidgetScriptAllowedForCartPage()) : ?>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "widgetRenderer": {
+                "merchant_id" : <?php echo $this->getMerchantID() ?>
+            }
+        }
+    }
+</script>
+<?php endif; ?>

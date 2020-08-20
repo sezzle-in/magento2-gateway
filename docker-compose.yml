@@ -1,0 +1,28 @@
+version: '3.6'
+services:
+  magento2:
+    container_name: magento2
+    image: hisankaran/magento2:2.3.3
+    # build:
+    #   context: ./internal
+    #   args:
+    #     MAGENTO_VERSION: 2.3.3
+    restart: always
+    ports:
+      - 80:8080
+    env_file: 
+      - ./internal/docker.env
+    volumes:
+      - ./app:/var/www/html/app/code/Sezzle/Sezzlepay
+    depends_on:
+      - magento2_db
+  magento2_db:
+    container_name: magento2_db
+    image: mysql:5.7
+    restart: always
+    env_file:
+      - ./internal/docker.env
+    volumes:
+      - database:/var/lib/mysql
+volumes:
+  database:
