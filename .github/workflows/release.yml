@@ -22,7 +22,7 @@ jobs:
         draft: false
         prerelease: false
     - name: Create release archive
-      id: create_release
+      id: create_release_archive
       run: ./internal/scripts/create-release.sh
     - name: Upload release asset
       id: upload_release
