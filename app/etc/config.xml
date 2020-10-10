@@ -15,11 +15,11 @@
                 <order_status>processing</order_status>
                 <merchant_country>IN</merchant_country>
                 <payment_mode>live</payment_mode>
-                <log_tracker>0</log_tracker>
                 <payment_action>authorize_capture</payment_action>
                 <title>Sezzle</title>
                 <widget_pdp>1</widget_pdp>
-                <widget_cart>1</widget_cart>	    
+                <widget_cart>1</widget_cart>
+                <logging_enabled>1</logging_enabled>    
             </sezzlepay>
         </payment>
     </default>
